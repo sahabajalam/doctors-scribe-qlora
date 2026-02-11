@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+data/
+models/
+outputs/
+*.log
+.coverage
+htmlcov/
+.DS_Store
+mlruns/
+.pytest_cache/
+.ruff_cache/

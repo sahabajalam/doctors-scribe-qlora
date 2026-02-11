@@ -1,0 +1,7 @@
+### Instruction:
+Convert this messy doctor's note into formal SOAP format.
+
+### Input:
+pt c/o chest pain x2d, worse w exertion
+
+### Response:
