@@ -30,8 +30,8 @@ class Settings(BaseSettings):
     mlflow_tracking_uri: str = "./mlruns"
 
     # Model paths
-    model_path: str = "models/llama3-doctor-scribe"
-    base_model: str = "meta-llama/Meta-Llama-3-8B-Instruct"
+    model_path: str = "models/medgemma-soap-lora"
+    base_model: str = "google/medgemma-1.5-4b-it"
 
     # Training defaults
     lora_r: int = 16

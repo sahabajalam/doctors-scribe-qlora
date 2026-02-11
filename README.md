@@ -1,4 +1,4 @@
-# Doctor's Scribe: Clinical Note Fine-Tuning
+# MedGeemaSOAP: Clinical Note Fine-Tuning
 
 Fine-tuned MedGemma 1.5 4B-IT to convert messy doctor notes into structured SOAP format using QLoRA, achieving 97% cost reduction compared to GPT-4 API.
 
@@ -51,8 +51,8 @@ The fine-tuned LoRA adapter is available on HuggingFace:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Clone and install
-git clone https://github.com/yourusername/doctor-scribe.git
-cd doctor-scribe
+git clone https://github.com/sahabajalam/doctors-scribe-qlora.git
+cd medgeema-soap
 uv sync --dev
 
 # Copy environment template
@@ -130,7 +130,7 @@ Step 25:  2.0016 → Step 100: 0.8718 → Step 200: 0.2660 → Step 500: 0.0217
 ## Project Structure
 
 ```
-doctor-scribe/
+medgeema-soap/
 ├── src/
 │   ├── config.py              # Pydantic Settings
 │   ├── data/

@@ -1,1 +1,1 @@
-"""Test suite for Doctor's Scribe."""
+"""Test suite for MedGeemaSOAP."""

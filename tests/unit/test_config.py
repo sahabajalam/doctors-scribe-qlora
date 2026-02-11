@@ -20,8 +20,8 @@ class TestSettings:
     def test_model_paths_default(self):
         """Test default model paths."""
         settings = Settings()
-        assert "llama3-doctor-scribe" in settings.model_path
-        assert "Meta-Llama-3-8B-Instruct" in settings.base_model
+        assert "medgemma-soap-lora" in settings.model_path
+        assert "medgemma-1.5-4b-it" in settings.base_model
 
     def test_mlflow_tracking_uri_default(self):
         """Test default MLflow tracking URI."""

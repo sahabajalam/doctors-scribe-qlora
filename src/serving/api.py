@@ -10,7 +10,7 @@ setup_logging()
 logger = get_logger(__name__)
 
 app = FastAPI(
-    title="Doctor's Scribe API",
+    title="MedGeemaSOAP API",
     description="Convert messy clinical notes to SOAP format",
     version="1.0.0",
 )

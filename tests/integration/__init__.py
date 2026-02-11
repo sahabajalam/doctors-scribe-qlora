@@ -1,1 +1,1 @@
-"""Integration tests for Doctor's Scribe."""
+"""Integration tests for MedGeemaSOAP."""

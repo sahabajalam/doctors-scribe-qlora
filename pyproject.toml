@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "doctor-scribe"
+name = "medgeema-soap"
 version = "0.1.0"
 description = "Clinical note fine-tuning with QLoRA"
 requires-python = ">=3.11"
@@ -44,7 +44,7 @@ dev = [
 ]
 
 [project.scripts]
-doctor-scribe-serve = "scripts.serve:main"
+medgeema-soap-serve = "scripts.serve:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]

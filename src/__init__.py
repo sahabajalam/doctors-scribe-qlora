@@ -1,4 +1,4 @@
-"""Doctor's Scribe - Clinical Note Fine-Tuning with QLoRA."""
+"""MedGeemaSOAP - Clinical Note Fine-Tuning with QLoRA."""
 
 from src.config import Settings, get_settings
 

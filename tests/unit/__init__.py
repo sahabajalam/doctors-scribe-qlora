@@ -1,1 +1,1 @@
-"""Unit tests for Doctor's Scribe."""
+"""Unit tests for MedGeemaSOAP."""

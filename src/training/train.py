@@ -1,4 +1,4 @@
-"""Main training script for doctor-scribe fine-tuning."""
+"""Main training script for medgeema-soap fine-tuning."""
 
 import logging
 import argparse
@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 def train(
     base_model_id: str = "google/medgemma-4b-pt",
     dataset_dir: str = "data/processed",
-    output_dir: str = "models/doctor-scribe-lora",
+    output_dir: str = "models/medgeema-soap-lora",
     epochs: int = 3,
     batch_size: int = 4,
     grad_accum_steps: int = 4,
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fine-tune a model on clinical notes")
     parser.add_argument("--base-model", type=str, default=settings.base_model or "google/medgemma-4b-pt")
     parser.add_argument("--dataset-dir", type=str, default="data/processed")
-    parser.add_argument("--output-dir", type=str, default=settings.model_path or "models/doctor-scribe-lora")
+    parser.add_argument("--output-dir", type=str, default=settings.model_path or "models/medgeema-soap-lora")
     parser.add_argument("--epochs", type=int, default=settings.num_epochs)
     parser.add_argument("--batch-size", type=int, default=settings.batch_size)
     parser.add_argument("--grad-accum", type=int, default=4)
