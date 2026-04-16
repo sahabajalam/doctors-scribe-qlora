@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 def train(
-    base_model_id: str = "google/medgemma-4b-pt",
+    base_model_id: str = "google/medgemma-1.5-4b-it",
     dataset_dir: str = "data/processed",
     output_dir: str = "models/medgeema-soap-lora",
     epochs: int = 3,
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     settings = get_settings()
     
     parser = argparse.ArgumentParser(description="Fine-tune a model on clinical notes")
-    parser.add_argument("--base-model", type=str, default=settings.base_model or "google/medgemma-4b-pt")
+    parser.add_argument("--base-model", type=str, default=settings.base_model or "google/medgemma-1.5-4b-it")
     parser.add_argument("--dataset-dir", type=str, default="data/processed")
     parser.add_argument("--output-dir", type=str, default=settings.model_path or "models/medgeema-soap-lora")
     parser.add_argument("--epochs", type=int, default=settings.num_epochs)

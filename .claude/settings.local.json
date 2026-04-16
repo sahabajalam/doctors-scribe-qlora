@@ -3,7 +3,8 @@
     "allow": [
       "Bash(uv sync:*)",
       "Bash(uv run ruff:*)",
-      "Bash(uv run pytest:*)"
+      "Bash(uv run pytest:*)",
+      "Read(//c/Users/SAB/.claude/projects/d--60-Days-Projects-Portfolio-Series-project-5-finetune-doctor-scribe/memory/**)"
     ]
   }
 }

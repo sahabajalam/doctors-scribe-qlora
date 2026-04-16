@@ -143,14 +143,6 @@ export function renderMetrics(container: HTMLElement) {
                         </div>
                     </div>
                 </div>
-                
-                <!-- CTA -->
-                <div class="text-center">
-                    <a href="/comparison.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; background: var(--primary); color: #fff; border-radius: 10px; font-weight: 600; font-size: 0.9375rem; text-decoration: none; box-shadow: 0 4px 12px rgba(0,102,204,.25); transition: all .2s;" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 20px rgba(0,102,204,.3)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 12px rgba(0,102,204,.25)'">
-                        View Detailed Side-by-Side Comparison
-                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                    </a>
-                </div>
             </div>
         </div>
     `;
@@ -502,23 +494,14 @@ export function renderDetailedComparisonSection(container: HTMLElement) {
 
     // ── Build HTML ──────────────────────────────────────────────────────
     container.innerHTML = `
-        <div class="section" style="background: var(--bg-surface); padding-bottom: 2rem;">
+        <div class="section" style="background: var(--bg-surface); padding: 1rem 0 3rem;">
             <div class="container">
-                <div class="text-center mb-12 nv-page-desc">
-                     <p style="
-                        font-family: 'Inter', sans-serif;
-                        font-size: 1.5rem;
-                        font-weight: 800;
-                        background: linear-gradient(90deg, #111827, #3B82F6, #8B5CF6);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-                        margin: 0 auto;
-                        max-width: 100%;
-                        line-height: 1.4;
-                        letter-spacing: -0.02em;
-                     ">
-                        Explore how the fine-tuned Google/medgemma-1.5-4b model improves upon the base model with side-by-side examples across 54 test cases.
+                <div class="text-center" style="margin-bottom: 1.75rem;">
+                    <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--text-primary); margin: 0 0 .5rem; letter-spacing: -0.02em;">
+                        Try it on real cases
+                    </h2>
+                    <p style="color: var(--text-secondary); font-size: 1rem; margin: 0;">
+                        Pick a case, then toggle between fine-tuned, base, and reference outputs.
                     </p>
                 </div>
 

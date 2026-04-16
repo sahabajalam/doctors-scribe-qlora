@@ -50,16 +50,16 @@ Fine-tuned LLM to convert messy doctor notes into structured **SOAP format** usi
 
 
 ## Key Technical Features
-- **QLoRA Fine-tuning**: 4-bit NF4 quantization + LoRA adapters on Llama-3-8B
-- **Minimal Trainable Parameters**: ~9M params (0.1% of 8B)
+- **QLoRA Fine-tuning**: 4-bit NF4 quantization + LoRA adapters on MedGemma-1.5-4B
+- **Minimal Trainable Parameters**: ~30M params (0.69% of 4.3B)
 - **HIPAA Compliant**: PHI stays on-premise (self-hosted inference)
 - **Fast Inference**: < 2 second response time
 
 ## Technologies
-- **Base Model**: meta-llama/Meta-Llama-3-8B-Instruct
+- **Base Model**: google/medgemma-1.5-4b-it
 - **Training**: QLoRA, SFTTrainer, Hugging Face Transformers
 - **Backend**: FastAPI
-- **Config**: Hydra
+- **Config**: Pydantic Settings
 - **Evaluation**: ROUGE-L, BERTScore
 - **Dev Tools**: UV, Ruff, pytest, pre-commit
 
@@ -69,8 +69,8 @@ Fine-tuned LLM to convert messy doctor notes into structured **SOAP format** usi
 | Quantization | 4-bit NF4 with double quantization |
 | LoRA Rank | 16 (alpha=32) |
 | Target Modules | q_proj, v_proj, o_proj, gate_proj, up_proj, down_proj |
-| Trainable Parameters | ~9M (0.1% of 8B) |
-| Training Hardware | T4 GPU (Colab) or P100 (Kaggle) |
+| Trainable Parameters | ~30M (0.69% of 4.3B) |
+| Training Hardware | T4 GPU (Kaggle) |
 
 ## Evaluation Results
 | Metric | Our Model | GPT-3.5 | GPT-4 |
@@ -115,7 +115,7 @@ urgent surgical consultation requested.
 ## Interview Talking Points
 - "I achieved 97% cost reduction while maintaining 95% format compliance - making LLM-powered medical documentation economically viable."
 - "The model runs entirely on-premise, ensuring HIPAA compliance by keeping PHI off third-party servers."
-- "I used QLoRA to fine-tune an 8B parameter model with only 9M trainable parameters - reducing compute costs by 99.9%."
+- "I used QLoRA to fine-tune a 4B parameter model with only ~30M trainable parameters (0.69%) - reducing compute costs dramatically."
 
 ## Work Log
 
